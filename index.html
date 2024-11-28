@@ -14,59 +14,63 @@
 
 <body class="bg-[#2D2726] ">
   <div class="flex items-center justify-between px-12 ">
-    <img class="pt-4 pb-3" src="img/heading.png" alt="img">
-    <div class="flex gap-8 text-[#CBC9C9] pt-[22px] pb-[18px]">
+    <img class="pt-4 pb-3 " src="img/heading.png" alt="img">
+    <div class="md:flex hidden  gap-8 text-[#CBC9C9] pt-[22px] pb-[18px]">
       <p class="font-semibold text-base leading-5 font-sans cursor-pointer">Discover</p>
       <p class="font-semibold text-base leading-5 font-sans cursor-pointer">Mushroom guide</p>
       <p class="font-semibold text-base leading-5 font-sans cursor-pointer">FAQ</p>
     </div>
-  </div>
-  <div class="relative">
-    <img class="w-full"
-      src="img/A person walking through a lush green forest, carefully picking mushrooms and placing them into a wicker basket..jpg"
-      alt="img">
-    <div class="container mx-auto absolute top-[140.75px] left-0 right-0 w-[1130px]">
-      <p class="text-white font-semibold text-[60px] leading-normal tracking-tight text-center">
-        Discover the World of
-        <span class="text-orange-400 font-bold text-[80px] leading-[84px] flex items-center justify-center">
-          Mushroom Foraging
-        </span>
-      </p>
-    </div>
-    <div
-      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[720px] mt-8 mb-16 flex flex-wrap gap-3  items-center justify-center">
-      <p class="text-white font-normal  leading-5 text-center text-base font-sans">
-        Mushroom foraging is the art and science of identifying and collecting wild mushrooms.
-      </p>
-      <p class="text-white font-normal  leading-5 text-center text-base font-sans">It's a practice that combines outdoor
-        exploration,
-        botanical knowledge, and culinary adventure. Foragers venture into forests, fields, and even urban green spaces
-        to discover these hidden treasures. </p>
-      <p class="text-white font-normal  leading-5 text-center text-base font-sans">But beware – this hobby requires
-        careful study
-        and
-        respect for nature, as some mushrooms can be dangerous if misidentified.</p>
+
+    <div id="menuContainer" class="relative md:hidden">
+      <div id="menuToggle" class="cursor-pointer flex justify-end">
+        <svg width="31" height="14" viewBox="0 0 31 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="31" height="2" rx="1" fill="#D9D9D9" />
+          <rect y="6" width="31" height="2" rx="1" fill="#D9D9D9" />
+          <rect y="12" width="31" height="2" rx="1" fill="#D9D9D9" />
+        </svg>
+      </div>
+      <div id="dropdownMenu" class=" absolute top-9 right-[-19px]  z-10 cursor-pointer">
+        <ul class="flex flex-col gap-8 max-w-[256px] w-full p-8 bg-green-700">
+          <li class="font-bold text-2xl text-white"><a href="#">Discover</a></li>
+          <li class="font-bold text-2xl border-t-2 border-gray-500 pt-8 text-white"><a href="#">Mushroom guide</a></li>
+          <li class="font-bold text-2xl border-t-2 border-gray-500 pt-8 text-white"><a href="#">FAQ</a></li>
+        </ul>
+      </div>
     </div>
   </div>
-  <div class="flex items-center justify-center gap-12 py-[128px]  bg-green-900">
-    <img class="max-w-[541px] w-full rounded-xl" src="img/img.1.png" alt="img">
-    <div class="max-w-[541px] w-full flex flex-col gap-3">
+  <div
+    class="bg-[url('img/bg.2.jpg')] bg-cover bg-center  w-full flex flex-col gap-8 justify-center items-center py-20 px-4">
+    <h1 class="font-bold text-6xl  md:text-[80px]  text-white text-center max-w-[1130px] w-full ">Discover the World
+      of <span class="font-bold text-6xl  md:text-[117px]  text-orange-400">Mushroom Foraging</span></h1>
+    <div class=" max-w-[322px] md:max-w-[720px] w-full flex flex-col gap-6 justify-center items-center text-center">
+      <p class="font-normal text-xl/8 text-white font-sans">Mushroom foraging is the art and science of identifying and
+        collecting wild mushrooms. </p>
+      <p class="font-normal text-xl/8 text-white font-sans">It's a practice that combines outdoor exploration, botanical
+        knowledge, and culinary adventure. Foragers venture into forests, fields, and even urban green spaces to
+        discover these hidden treasures. </p>
+      <p class="font-normal text-xl/8 text-white font-sans">But beware – this hobby requires careful study and respect
+        for nature, as some mushrooms can be dangerous if misidentified.</p>
+    </div>
+  </div>
+  <div class="flex flex-col px-4 md:flex-row items-center justify-center gap-12 py-[128px]  bg-green-900">
+    <img class="max-w-[393px]  md:max-w-[541px] w-full rounded-xl" src="img/img.1.png" alt="img">
+    <div class="max-w-[393px]  md:max-w-[541px] w-full flex flex-col gap-3 text-center">
       <h1 class="text-white font-bold text-5xl leading-[52.8px] font-sans">Where to look</h1>
-      <div class="flex flex-col gap-6">
-        <p class="text-white font-normal text-base leading-[38.4px] font-sans">Different species grow in different types
+      <div class="flex flex-col gap-6 ">
+        <p class="font-normal text-xl/8 text-white font-sans">Different species grow in different types
           of environments. </p>
-        <p class="text-white font-normal text-base leading-[38.4px] font-sans">Forests are always a good starting place,
+        <p class="font-normal text-xl/8 text-white font-sans">Forests are always a good starting place,
           though, with a wide range of species that grow
           in them. </p>
-        <p class="text-white font-normal text-base leading-[38.4px] font-sans">If you’re after something specific, you
+        <p class="font-normal text-xl/8 text-white font-sans">If you’re after something specific, you
           can use our reference guide below to help you out.
         </p>
       </div>
     </div>
   </div>
-  <div class="bg-stone-800 py-[128px] flex flex-col justify-center items-center gap-5">
-    <div class="flex flex-col gap-5 justify-start items-start w-full max-w-[1130px]">
-      <h1 class="text-white font-bold text-5xl leading-[52px]">Get to know your mushrooms</h1>
+  <div class="bg-stone-800 pt-14  flex flex-col justify-center items-center gap-5">
+    <div class="flex flex-col gap-5 justify-start items-start w-full max-w-[393px] md:max-w-[1130px] px-4">
+      <h1 class="text-white font-bold text-5xl leading-[52px] ">Get to know your mushrooms</h1>
       <div class="flex gap-2">
         <button
           class="flex items-center whitespace-nowrap gap-3 bg-green-700 max-w-[130px] w-full py-2 px-4 rounded text-white">Season:
@@ -74,15 +78,15 @@
             <path d="M1 1L5.5 5L10 1" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
-        <button class="flex items-center gap-3 bg-green-700 max-w-[130px] w-full py-2 px-4 rounded text-white">Type:
+        <button class="flex items-center gap-3 bg-green-700 max-w-[130px] w-full py-2 px-3  rounded text-white">Type:
           All<svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1L5.5 5L10 1" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
       </div>
     </div>
-    <div class="grid grid-cols-4 gap-4">
-      <div class="bg-zinc-800 p-4 max-w-[270px] w-full rounded-xl">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl ">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Chanterelle</h3>
           <div>
@@ -99,7 +103,7 @@
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Morel</h3>
           <div>
@@ -115,7 +119,7 @@
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Chicken of the Woods</h3>
           <div>
@@ -132,7 +136,7 @@
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4  max-w-[393px]  md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Death Cap</h3>
           <div>
@@ -151,8 +155,8 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-4 gap-4">
-      <div class="bg-zinc-800 p-4 max-w-[270px] w-full rounded-xl">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Oyster Mushroom</h3>
           <div>
@@ -168,7 +172,7 @@
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Lion’s Mane</h3>
           <div>
@@ -184,7 +188,7 @@
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Destroying Angel</h3>
           <div>
@@ -201,7 +205,7 @@
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">King Bolete</h3>
           <div>
@@ -218,8 +222,8 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-4 gap-4">
-      <div class="bg-zinc-800 p-4 max-w-[270px] w-full rounded-xl">
+    <div class="flex flex-col md:flex-row gap-4 px-4 pb-14">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Shaggy Mane</h3>
           <div>
@@ -234,7 +238,7 @@
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px]  md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Lion’s Mane</h3>
           <div>
@@ -250,7 +254,7 @@
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4   max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Maitake</h3>
           <div>
@@ -268,7 +272,7 @@
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4  max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Matsutake</h3>
           <div>
@@ -286,55 +290,63 @@
         </div>
       </div>
     </div>
-   <div class="flex bg-stone-900 w-full justify-center">
-    <div class=" flex flex-col gap-6 py-[72px]">
-      <h1 class="font-bold text-5xl text-white">Frequently Asked Questions</h1>
-      <div class="max-w-[1330px]  grid grid-cols-3 gap-6">
-        <div class="bg-zinc-800 max-w-[427px] p-4 w-full rounded-xl flex flex-col gap-4  row-span-2">
-          <img src="img/mushrooms (1).png" alt="img">
-          <h3 class="font-bold text-2xl max-w-[395px] w-full text-white">What do I need to start mushroom foraging?</h3>
-          <p class="text-stone-300 text-[16px] font-normal">You'll need a local field guide, a sharp knife or scissors,
-            a basket or mesh bag for collecting, and paper bags for separating specimens. Bring a small brush for
-            cleaning, wear sturdy boots, and carry a GPS device or compass to track your location. A camera is also
-            helpful to document your finds.</p>
-        </div>
-        <div class="bg-zinc-800 max-w-[427px] p-4 w-full rounded-xl flex flex-col gap-4 row-span-2">
-          <h3 class="font-bold text-2xl max-w-[395px] w-full text-white">How can I identify edible mushrooms?</h3>
-          <p class="text-stone-300 text-[16px] font-normal">Learn from experienced foragers and reliable guidebooks –
-            never rely on apps alone. Study each mushroom's specific features like cap shape, gill structure, stem
-            characteristics, and spore prints. Start with easily identifiable species that have no poisonous lookalikes,
-            and never eat anything unless you're completely certain of its identification.</p>
-          <img src="img/mouss.2.png" alt="img">
-        </div>
-        <div class="bg-zinc-800 max-w-[427px] p-4 w-full rounded-xl flex flex-col gap-4 row-span-3">
-          <img src="img/mo.3.png" alt="img">
-          <h3 class="font-bold text-2xl max-w-[395px] w-full text-white">What are the best seasons for mushroom
-            foraging?</h3>
-          <p class="text-stone-300 text-[16px] font-normal">Spring is ideal for morels, late summer brings chanterelles
-            and boletes, and fall is peak season for most mushrooms including oysters and hen of the woods. Some species
-            can even be found in winter, especially in milder climates. Each season offers different varieties, so
-            year-round foraging is possible.</p>
-        </div>
-        <div class="bg-zinc-800 max-w-[878px] p-4 w-full rounded-xl flex gap-4 col-span-2">
-          <img src="img/124.png" alt="img">
-          <div class="flex flex-col gap-3">
-            <h3 class="font-bold text-2xl max-w-[395px] w-full text-white">Where can I find foraging spots?</h3>
-            <p class="text-stone-300 text-[16px] font-normal">Look in deciduous forests, especially near oak and maple
-              trees, and in damp, shaded areas. Fallen logs and dead trees are often productive spots. Only forage on
-              public lands where it's allowed, and always check local regulations. Remember to get permission for
-              private property and keep your best locations private to prevent over-harvesting.</p>
+    <div class="flex bg-stone-900 w-full justify-center">
+      <div class=" flex flex-col gap-6 md:py-[72px] px-4 py-16">
+        <h1 class="font-bold text-5xl text-white  max-w-[395px] md:max-w-[1330px]">Frequently Asked Questions</h1>
+        <div class="max-w-[1330px]  grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-zinc-800  max-w-[395px]  md:max-w-[427px] p-4 w-full rounded-xl flex flex-col gap-4  md:row-span-2">
+            <img src="img/mushrooms (1).png" alt="img">
+            <h3 class="font-bold text-2xl w-full text-white">What do I need to start mushroom foraging?
+            </h3>
+            <p class="text-stone-300 text-[16px] font-normal">You'll need a local field guide, a sharp knife or
+              scissors,
+              a basket or mesh bag for collecting, and paper bags for separating specimens. Bring a small brush for
+              cleaning, wear sturdy boots, and carry a GPS device or compass to track your location. A camera is also
+              helpful to document your finds.</p>
+          </div>
+          <div
+            class="bg-zinc-800 max-w-[393px] md:max-w-[427px] p-4 w-full rounded-xl flex flex-col gap-4 md:row-span-2">
+            <h3 class="font-bold text-2xl max-w-[395px] w-full text-white">How can I identify edible mushrooms?</h3>
+            <p class="text-stone-300 text-[16px] font-normal">Learn from experienced foragers and reliable guidebooks –
+              never rely on apps alone. Study each mushroom's specific features like cap shape, gill structure, stem
+              characteristics, and spore prints. Start with easily identifiable species that have no poisonous
+              lookalikes,
+              and never eat anything unless you're completely certain of its identification.</p>
+            <img src="img/mouss.2.png" alt="img">
+          </div>
+          <div
+            class="bg-zinc-800 max-w-[393px] md:max-w-[427px] p-4 w-full rounded-xl flex flex-col gap-4 md:row-span-3">
+            <img src="img/mo.3.png" alt="img">
+            <h3 class="font-bold text-2xl max-w-[395px] w-full text-white">What are the best seasons for mushroom
+              foraging?</h3>
+            <p class="text-stone-300 text-[16px] font-normal">Spring is ideal for morels, late summer brings
+              chanterelles
+              and boletes, and fall is peak season for most mushrooms including oysters and hen of the woods. Some
+              species
+              can even be found in winter, especially in milder climates. Each season offers different varieties, so
+              year-round foraging is possible.</p>
+          </div>
+          <div
+            class="bg-zinc-800 max-w-[393px] md:max-w-[878px] p-4 w-full rounded-xl flex-col flex md:flex-row gap-4 md:col-span-2 col-span-1">
+            <img src="img/124.png" alt="img">
+            <div class="flex flex-col gap-3">
+              <h3 class="font-bold text-2xl max-w-[395px] w-full text-white">Where can I find foraging spots?</h3>
+              <p class="text-stone-300 text-[16px] font-normal">Look in deciduous forests, especially near oak and maple
+                trees, and in damp, shaded areas. Fallen logs and dead trees are often productive spots. Only forage on
+                public lands where it's allowed, and always check local regulations. Remember to get permission for
+                private property and keep your best locations private to prevent over-harvesting.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-   </div>
   </div>
-  <div class="flex flex-col gap-8 border-b border-stone-800 bg-stone-800 justify-center items-center pb-8">
+  <div class="flex flex-col gap-8 border-b border-stone-800 bg-stone-800 justify-center items-center  md:py-8 py-8">
     <p class="text-sm leading-6 font-bold text-stone-300">Happy Foraging!</p>
     <p class="text-sm leading-6 font-bold text-stone-300">contact@fungifinders.com</p>
   </div>
-
-
+  <script src="script.js"></script>
 </body>
 
 </html>
