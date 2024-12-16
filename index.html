@@ -10,9 +10,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-</head>
+</head>  
 
-<body class="bg-[#2D2726] ">
+<body class="bg-[#2D2726]">
   <div class="flex items-center justify-between px-4 md:px-12 ">
     <img class="pt-4 pb-3 " src="img/heading.png" alt="img">
     <div class="md:flex hidden  gap-8 text-[#CBC9C9] pt-[22px] pb-[18px]">
@@ -29,11 +29,24 @@
           <rect y="12" width="31" height="2" rx="1" fill="#D9D9D9" />
         </svg>
       </div>
-      <div id="dropdownMenu" class=" absolute top-9 right-[-19px]  z-10 cursor-pointer">
+      <!-- <div id="dropdownMenu" class=" absolute top-9 right-[-19px]  z-10 cursor-pointer">
         <ul class="flex flex-col gap-8 max-w-[256px] w-full p-8 bg-green-700">
-          <li class="font-bold text-2xl text-white"><a href="#">Discover</a></li>
+          <li class="font-bold text-2xl border-t-2 border-gray-500 pt-8 text-white "><a href="#">Discover</a></li>
           <li class="font-bold text-2xl border-t-2 border-gray-500 pt-8 text-white"><a href="#">Mushroom guide</a></li>
           <li class="font-bold text-2xl border-t-2 border-gray-500 pt-8 text-white"><a href="#">FAQ</a></li>
+        </ul>
+      </div> -->
+      <div id="dropdownMenu" class="absolute top-9 right-[-19px] z-10 cursor-pointer">
+        <ul class="flex flex-col gap-8 max-w-[256px] w-full p-8 bg-green-700">
+          <li class="font-bold text-2xl border-t-2 border-gray-500 pt-8 text-white cursor-pointer hover:text-green-400">
+            <a href="#">Discover</a>
+          </li>
+          <li class="font-bold text-2xl border-t-2 border-gray-500 pt-8 text-white cursor-pointer hover:text-green-400">
+            <a href="#">Mushroom guide</a>
+          </li>
+          <li class="font-bold text-2xl border-t-2 border-gray-500 pt-8 text-white cursor-pointer hover:text-green-400">
+            <a href="#">FAQ</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -52,7 +65,7 @@
         for nature, as some mushrooms can be dangerous if misidentified.</p>
     </div>
   </div>
-  <div class="flex flex-col px-4 md:flex-row items-center justify-center gap-12 py-[128px]  bg-green-900">
+  <div class="flex flex-col px-4 lg:flex-row md:flex-col  items-center justify-center gap-12 py-[128px]  bg-green-900">
     <img class="max-w-[393px]  md:max-w-[541px] w-full rounded-xl" src="img/img.1.png" alt="img">
     <div class="max-w-[393px]  md:max-w-[541px] w-full flex flex-col gap-3 text-center">
       <h1 class="text-white font-bold text-5xl leading-[52.8px] font-sans">Where to look</h1>
@@ -63,7 +76,7 @@
           though, with a wide range of species that grow
           in them. </p>
         <p class="font-normal text-xl/8 text-white font-sans">If you’re after something specific, you
-          can use our reference guide below to help you out.
+          can use our reference guide below to help you out.                              
         </p>
       </div>
     </div>
@@ -148,13 +161,12 @@
           <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">Pale green to white cap with white gills
           </p>
           <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
-            <span class="font-normal text-sm leading-[21px] text-stone-300"> Extremely toxic - study for safety
+            <span class="font-normal text-sm leading-[21px] text-stone-300">Extremely toxic - study for safety
               awareness</span>
           </p>
-        </div>
+        </div>       
       </div>
     </div>
-
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4">
       <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
@@ -197,8 +209,7 @@
             <button
               class="max-w-[65px] w-full px-2 bg-green-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">summer</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">Pure white mushroom with a sack-like base
-          </p>
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">Pure white mushroom with a sack-like bas</p>
           <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> Deadly toxic - study for safety
               awareness</span>
@@ -236,7 +247,7 @@
           <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> Must be harvested and eaten quickly</span>
           </p>
-        </div>
+        </div>  
       </div>
       <div class="bg-zinc-800 p-4 max-w-[393px]  md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
@@ -284,7 +295,7 @@
           <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">White to brown cap with thick stem and
             distinct spicy aroma</p>
           <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
-            <span class="font-normal text-sm leading-[21px] text-stone-300"> Verify identification - has toxic
+            <span class="font-normal text-sm leading-[21px] text-stone-300"> Verify identification - has toxic      
               look-alikes</span>
           </p>
         </div>
@@ -342,7 +353,8 @@
       </div>
     </div>
   </div>
-  <div class="flex flex-col gap-8 border-b border-stone-800 bg-stone-800 justify-center items-center  md:py-8 py-8">
+  <div
+    class="flex flex-col gap-8 border-b border-stone-800 bg-stone-800 justify-center items-center px-4  md:py-8 py-8">
     <p class="text-sm leading-6 font-bold text-stone-300">Happy Foraging!</p>
     <p class="text-sm leading-6 font-bold text-stone-300">contact@fungifinders.com</p>
   </div>
