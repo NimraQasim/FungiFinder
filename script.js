@@ -9,6 +9,84 @@ menuToggle.addEventListener('click', () => {
 
 
 
+
+
+// Toggle the dropdown menu
+const dropdownButton = document.getElementById('dropdownButton');
+const drop = document.getElementById('drop');
+
+dropdownButton.addEventListener('click', () => {
+  drop.classList.toggle('hidden');
+});
+
+// Update the button text when a season is selected
+function selectSeason(season) {
+  dropdownButton.innerHTML = `
+    Season: ${season}
+    <svg
+      width="11"
+      height="6"
+      viewBox="0 0 11 6"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1 1L5.5 5L10 1"
+        stroke="white"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  `;
+  drop.classList.add('hidden');
+}
+
+// Close the dropdown if clicked outside
+document.addEventListener('click', (e) => {
+  if (!dropdownButton.contains(e.target) && !drop.contains(e.target)) {
+    drop.classList.add('hidden');
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const mushrooms = [
   {
     name: "Chanterelle",

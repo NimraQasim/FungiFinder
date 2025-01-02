@@ -29,13 +29,6 @@
           <rect y="12" width="31" height="2" rx="1" fill="#D9D9D9" />
         </svg>
       </div>
-      <!-- <div id="dropdownMenu" class=" absolute top-9 right-[-19px]  z-10 cursor-pointer">
-        <ul class="flex flex-col gap-8 max-w-[256px] w-full p-8 bg-green-700">
-          <li class="font-bold text-2xl border-t-2 border-gray-500 pt-8 text-white "><a href="#">Discover</a></li>
-          <li class="font-bold text-2xl border-t-2 border-gray-500 pt-8 text-white"><a href="#">Mushroom guide</a></li>
-          <li class="font-bold text-2xl border-t-2 border-gray-500 pt-8 text-white"><a href="#">FAQ</a></li>
-        </ul>
-      </div> -->
       <div id="dropdownMenu" class="absolute top-9 right-[-19px] z-10 cursor-pointer">
         <ul class="flex flex-col gap-8 max-w-[256px] w-full p-8 bg-green-700">
           <li class="font-bold text-2xl border-t-2 border-gray-500 pt-8 text-white cursor-pointer hover:text-green-400">
@@ -78,37 +71,69 @@
         <p class="font-normal text-xl/8 text-white font-sans">If you’re after something specific, you
           can use our reference guide below to help you out.
         </p>
-      </div>
+      </div> 
     </div>
   </div>
   <div class="bg-stone-800 pt-14  flex flex-col justify-center items-center gap-5">
-    <!-- <div class="flex flex-col gap-5 justify-start items-start w-full max-w-[393px] md:max-w-[1130px] px-4">
-      <h1 class="text-white font-bold text-5xl leading-[52px] ">Get to know your mushrooms</h1>
-      <div class="flex gap-2">
-        <button
-          class="flex items-center whitespace-nowrap gap-3 bg-green-700 max-w-[130px] w-full py-2 px-4 rounded text-white">Season:
-          All<svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L5.5 5L10 1" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-        <button class="flex items-center gap-3 bg-green-700 max-w-[130px] w-full py-2 px-3  rounded text-white">Type:
-          All<svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L5.5 5L10 1" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-    </div> -->
     <div class="flex flex-col gap-5 justify-start items-start w-full max-w-[393px] md:max-w-[1130px] px-4">
       <h1 class="text-white font-bold text-5xl leading-[52px]">Get to know your mushrooms</h1>
       <div class="flex gap-2">
-        <button class="flex items-center whitespace-nowrap gap-3 bg-green-700 max-w-[130px] w-full py-2 px-4 rounded text-white">
-          Season: All
-          <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L5.5 5L10 1" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
+        <div class="relative inline-block">
+          <button
+            class="flex items-center whitespace-nowrap gap-3 bg-green-700 max-w-[130px] w-full py-2 pr-2 pl-2 rounded text-white  "
+            id="dropdownButton"
+          >
+            Season: All
+            <svg
+              width="11"     
+              height="6"
+              viewBox="0 0 11 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L5.5 5L10 1"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div
+            class="absolute hidden bg-white shadow-md rounded mt-2 max-w-[130px] w-full z-10"
+            id="drop"
+          >
+            <ul class="text-gray-700">
+              <li
+                class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                onclick="selectSeason('All')"
+              >
+                All
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                onclick="selectSeason('Winter')"
+              >
+                Winter
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                onclick="selectSeason('Summer')"
+              >
+                Summer
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                onclick="selectSeason('Autumn')"
+              >
+                Autumn
+              </li>
+            </ul>
+          </div>
+        </div>
+        
         <button class="flex items-center gap-3 bg-green-700 max-w-[130px] w-full py-2 px-3 rounded text-white">
-          Type: All
+          Type : All
           <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1L5.5 5L10 1" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
@@ -117,7 +142,7 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4"></div>    
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4">
-      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl ">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Chanterelle</h3>
           <div>
@@ -130,7 +155,7 @@
             false gills</p>
           <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> Has toxic look-alikes - learn proper
-              identification</span>
+              identification</span>                                                                      
           </p>
         </div>
       </div>
