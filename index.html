@@ -46,8 +46,8 @@
   </div>
   <div
     class="bg-[url('img/bg.2.jpg')] bg-cover bg-center  w-full flex flex-col gap-8 justify-center items-center py-20 px-4">
-    <h1 class="font-bold text-6xl  md:text-[80px]  text-white text-center max-w-[1130px] w-full ">Discover the World
-      of <span class="font-bold text-6xl  md:text-[117px]  text-orange-400">Mushroom Foraging</span></h1>
+    <h1 class="font-bold text-6xl  md:[60px] lg:text-[70px]  text-white text-center max-w-[1130px] w-full ">Discover the World
+      of <span class="font-bold text-6xl md:[60px] lg:text-[100px]  text-orange-400">Mushroom Foraging</span></h1>
     <div class=" max-w-[322px] md:max-w-[720px] w-full flex flex-col gap-6 justify-center items-center text-center">
       <p class="font-normal text-xl/8 text-white font-sans">Mushroom foraging is the art and science of identifying and
         collecting wild mushrooms. </p>
@@ -80,10 +80,10 @@
       <div class="flex gap-2">
         <div class="relative inline-block">
           <button
-            class="flex items-center whitespace-nowrap gap-3 bg-green-700 max-w-[130px] w-full py-2 pr-2 pl-2 rounded text-white  "
+            class="flex items-center whitespace-nowrap gap-3 bg-green-700 max-w-[166px]  py-2 pr-2 pl-2 rounded text-white   "
             id="dropdownButton"
           >
-            Season: All
+            Season : All
             <svg
               width="11"     
               height="6"
@@ -100,30 +100,30 @@
             </svg>
           </button>
           <div
-            class="absolute hidden bg-white shadow-md rounded mt-2 max-w-[130px] w-full z-10"
+            class="absolute hidden bg-white shadow-md rounded-md mt-2 max-w-[130px] w-full z-10"
             id="drop"
           >
             <ul class="text-gray-700">
               <li
-                class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                class="px-4 py-2 hover:bg-gray-100 hover:rounded-md cursor-pointer"
                 onclick="selectSeason('All')"
               >
                 All
               </li>
               <li
-                class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                class="px-4 py-2 hover:bg-gray-100  hover:rounded-md cursor-pointer"
                 onclick="selectSeason('Winter')"
               >
                 Winter
               </li>
               <li
-                class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                class="px-4 py-2 hover:bg-gray-100  hover:rounded-md cursor-pointer"
                 onclick="selectSeason('Summer')"
               >
                 Summer
               </li>
               <li
-                class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                class="px-4 py-2 hover:bg-gray-100  hover:rounded-md cursor-pointer"
                 onclick="selectSeason('Autumn')"
               >
                 Autumn
@@ -142,51 +142,53 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4"></div>    
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4">
-      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl h-full flex flex-col justify-between">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Chanterelle</h3>
-          <div>
+          <div class="flex gap-2">
             <button
               class="max-w-[52px] w-full px-1 bg-green-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">edible</button>
             <button
               class="max-w-16 w-full px-2 bg-green-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">summer</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">Golden-yellow, funnel-shaped mushroom with
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px] h-full">Golden-yellow, funnel-shaped mushroom with
             false gills</p>
-          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
+        </div>
+        <div>
+          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300 h-full">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> Has toxic look-alikes - learn proper
               identification</span>                                                                      
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl h-full">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Morel</h3>
-          <div>
+          <div class="flex gap-2">
             <button
               class="max-w-[52px] w-full px-1 bg-pink-900 leading-5 text-sm font-medium py-1 rounded cursor-pointer">toxic</button>
             <button
               class="max-w-16 w-full px-2 bg-cyan-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">spring</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">Distinctive honeycomb-like cap structure
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px] h-full">Distinctive honeycomb-like cap structure
           </p>
-          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
+          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300 h-full">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> Must be cooked before eating</span>
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl h-full">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Chicken of the Woods</h3>
-          <div>
+          <div class="flex gap-2">
             <button
               class="max-w-[52px] w-full px-1 bg-green-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">edible</button>
             <button
               class="max-w-16 w-full px-2 bg-green-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">summer</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">Bright orange bracket fungus with yellow
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px] h-full">Bright orange bracket fungus with yellow
             edges</p>
-          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
+          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300 h-full">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> Has toxic look-alikes - learn proper
               identification</span>
           </p>
@@ -195,15 +197,15 @@
       <div class="bg-zinc-800 p-4  max-w-[393px]  md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Death Cap</h3>
-          <div>
+          <div class="flex gap-2">
             <button
               class="max-w-[52px] w-full px-1 bg-pink-900 leading-5 text-sm font-medium py-1 rounded cursor-pointer">toxic</button>
             <button
               class="max-w-16 w-full px-2 bg-cyan-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">summer</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">Pale green to white cap with white gills
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px] h-full">Pale green to white cap with white gills
           </p>
-          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
+          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300 h-full">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300">Extremely toxic - study for safety
               awareness</span>
           </p>
@@ -211,66 +213,66 @@
       </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4">
-      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl h-full">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Oyster Mushroom</h3>
-          <div>
+          <div class="flex gap-2">
             <button
               class="max-w-[52px] w-full px-1 bg-green-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">edible</button>
             <button
               class="max-w-[34px] w-full px-2 bg-yellow-800 leading-5 text-sm font-medium py-1 rounded cursor-pointer">fall</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">Fan-shaped caps growing in clusters</p>
-          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px] h-full">Fan-shaped caps growing in clusters</p>
+          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300 h-full">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> Great beginner mushroom, few
               look-alikes</span>
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl h-full">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Lion’s Mane</h3>
-          <div>
+          <div class="flex gap-2">
             <button
               class="max-w-[52px] w-full px-1 bg-green-700  leading-5 text-sm font-medium py-1 rounded cursor-pointer">edible</button>
             <button
               class="max-w-[34px] w-full px-2 bg-yellow-800 leading-5 text-sm font-medium py-1 rounded cursor-pointer">fall</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">White, shaggy appearance like a lion's mane
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px] h-full">White, shaggy appearance like a lion's mane
           </p>
-          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
+          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300 h-full">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> No toxic look-alikes</span>
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl h-full">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Destroying Angel</h3>
-          <div>
+          <div class="flex gap-2">
             <button
               class="max-w-[44px] w-full px-1 bg-pink-900 leading-5 text-sm font-medium py-1 rounded cursor-pointer">toxic</button>
             <button
               class="max-w-[65px] w-full px-2 bg-green-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">summer</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">Pure white mushroom with a sack-like bas
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px] h-full">Pure white mushroom with a sack-like bas
           </p>
-          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
+          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300 h-full">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> Deadly toxic - study for safety
               awareness</span>
           </p>
         </div>
       </div>
-      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl h-full">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">King Bolete</h3>
-          <div>
+          <div class="flex gap-2">
             <button
               class="max-w-[44px] w-full px-1 bg-green-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">edible</button>
             <button
               class="max-w-[65px] w-full px-2 bg-green-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">summer</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">Large brown cap with thick stem</p>
-          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px] h-full">Large brown cap with thick stem</p>
+          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300 h-full">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> Learn to distinguish from similar
               species</span>
           </p>
@@ -278,17 +280,17 @@
       </div>
     </div>
     <div class="flex flex-col md:flex-row gap-4 px-4 pb-14">
-      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl">
+      <div class="bg-zinc-800 p-4 max-w-[393px] md:max-w-[270px] w-full rounded-xl h-full">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Shaggy Mane</h3>
-          <div>
+          <div class="flex gap-2">
             <button
               class="max-w-[52px] w-full px-1 bg-green-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">edible</button>
             <button
               class="max-w-[34px] w-full px-2 bg-yellow-800 leading-5 text-sm font-medium py-1 rounded cursor-pointer">fall</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">Tall white mushroom with shaggy scales</p>
-          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px] h-full">Tall white mushroom with shaggy scales</p>
+          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300 h-full">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> Must be harvested and eaten quickly</span>
           </p>
         </div>
@@ -296,15 +298,15 @@
       <div class="bg-zinc-800 p-4 max-w-[393px]  md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Lion’s Mane</h3>
-          <div>
+          <div class="flex gap-2">
             <button
               class="max-w-[52px] w-full px-1 bg-green-700  leading-5 text-sm font-medium py-1 rounded cursor-pointer">edible</button>
             <button
               class="max-w-[34px] w-full px-2 bg-yellow-800 leading-5 text-sm font-medium py-1 rounded cursor-pointer">fall</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">White, shaggy appearance like a lion's mane
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px] h-full">White, shaggy appearance like a lion's mane
           </p>
-          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
+          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300 h-full">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> No toxic look-alikes</span>
           </p>
         </div>
@@ -312,16 +314,16 @@
       <div class="bg-zinc-800 p-4   max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Maitake</h3>
-          <div>
+          <div class="flex gap-2">
             <button
               class="max-w-[44px] w-full px-1 bg-pink-900 leading-5 text-sm font-medium py-1 rounded cursor-pointer">toxic</button>
             <button
               class="max-w-[65px] w-full px-2 bg-cyan-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">spring</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">Large, feathery clusters with overlapping
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px] h-full">Large, feathery clusters with overlapping
             gray-brown caps
           </p>
-          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
+          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300 h-full">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> Also known as Hen of the Woods - no toxic
               look-alikes</span>
           </p>
@@ -330,15 +332,15 @@
       <div class="bg-zinc-800 p-4  max-w-[393px] md:max-w-[270px] w-full rounded-xl">
         <div class="flex flex-col gap-3">
           <h3 class="font-bold text-[21px] leading-7 text-white">Matsutake</h3>
-          <div>
+          <div class="flex gap-2">
             <button
               class="max-w-[44px] w-full px-1 bg-green-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">edible</button>
             <button
               class="max-w-[65px] w-full px-2 bg-green-700 leading-5 text-sm font-medium py-1 rounded cursor-pointer">summer</button>
           </div>
-          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px]">White to brown cap with thick stem and
+          <p class="text-stone-300 font-normal text-[16px] leading-[25.6px] h-full">White to brown cap with thick stem and
             distinct spicy aroma</p>
-          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300">Important notes:
+          <p class="bg-stone-700 p-3 rounded-md font-medium text-sm leading-[21px] text-stone-300 h-full">Important notes:
             <span class="font-normal text-sm leading-[21px] text-stone-300"> Verify identification - has toxic
               look-alikes</span>
           </p>
@@ -375,7 +377,7 @@
             <img src="img/mo.3.png" alt="img">
             <h3 class="font-bold text-2xl max-w-[395px] w-full text-white">What are the best seasons for mushroom
               foraging?</h3>
-            <p class="text-stone-300 text-[16px] font-normal">Spring is ideal for morels, late summer brings
+            <p class="text-stone-300 text-[16px] lg:text-[16px] md:text-[14px] font-normal">Spring is ideal for morels, late summer brings
               chanterelles
               and boletes, and fall is peak season for most mushrooms including oysters and hen of the woods. Some
               species
@@ -384,10 +386,10 @@
           </div>
           <div
             class="bg-zinc-800 max-w-[393px] md:max-w-[878px] p-4 w-full rounded-xl flex-col flex md:flex-row gap-4 md:col-span-2 col-span-1">
-            <img src="img/124.png" alt="img">
+            <img class="  max-w-[361px] lg:[329px] md:[229px]" src="img/124.png" alt="img">
             <div class="flex flex-col gap-3">
-              <h3 class="font-bold text-2xl max-w-[395px] w-full text-white">Where can I find foraging spots?</h3>
-              <p class="text-stone-300 text-[16px] font-normal">Look in deciduous forests, especially near oak and maple
+              <h3 class="font-bold text-2xl lg:text-2xl md:text-[14px] max-w-[395px] w-full text-white ">Where can I find foraging spots?</h3>
+              <p class="text-stone-300 lg:text-[16px] font-normal md:text-[14px]">Look in deciduous forests, especially near oak and maple
                 trees, and in damp, shaded areas. Fallen logs and dead trees are often productive spots. Only forage on
                 public lands where it's allowed, and always check local regulations. Remember to get permission for
                 private property and keep your best locations private to prevent over-harvesting.</p>
