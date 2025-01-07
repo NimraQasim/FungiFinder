@@ -116,3 +116,18 @@ document.addEventListener('click', (e) => {
 //   .join("");
 
 // container.innerHTML = mushroomCards;
+
+
+
+const typeDropdownButton = document.getElementById('typeDropdownButton');
+const typeDropdownMenu = document.getElementById('typeDropdownMenu');
+
+typeDropdownButton.addEventListener('click', () => {
+  typeDropdownMenu.classList.toggle('hidden');
+});
+
+document.addEventListener('click', (event) => {
+  if (!typeDropdownButton.contains(event.target) && !typeDropdownMenu.contains(event.target)) {
+    typeDropdownMenu.classList.add('hidden');
+  }
+});
